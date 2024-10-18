@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento e Desenvolvimento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide mt-4 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carrosel/treinamento.png" class="d-block w-100" alt="Slide 1" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carrosel/planilha.png" class="d-block w-100" alt="Slide 2" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carrosel/jogos.png" class="d-block w-100" alt="Slide 3" style="object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <!-- Cards de treinamentos -->
+    <h4 class="text-center my-4">Conheça alguns parceiros, produtos e conceitos de <strong>Usinagem!</strong></h4>
+
+    <div class="container mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="animation_scale col mb-4">
+                <div class="card h-100">
+                    <img src="./img/informativos/acelerador.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Acelera Vendedores</h5>
+                        <p class="card-text">O Acelera Vendedores é um programa que capacita nossos vendedores e acelera
+                            os nossos processos.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#aceleradorModal">Saiba
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="animation_scale col mb-4">
+                <div class="card h-100">
+                    <img src="./img/informativos/digimess.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Produtos Digimess</h5>
+                        <p class="card-text">Digimess, precisão e qualidade em instrumentos de medição para quem busca
+                            resultados confiáveis.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#digimessModal">Saiba
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="animation_scale col mb-4">
+                <div class="card h-100">
+                    <img src="./img/informativos/afiadora.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Afiadora Universal</h5>
+                        <p class="card-text">Afiadora universal, com versatilidade e precisão para manter suas
+                            ferramentas afiadas e produtivas.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#afiadoraModal">Saiba
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="animation_scale col mb-4">
+                <div class="card h-100">
+                    <img src="./img/informativos/divisor.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Divisor Universal</h5>
+                        <p class="card-text">Divisor Universal, com precisão e versatilidade para divisões exatas em
+                            usinagem complexa.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#divisorModal">Saiba
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="animation_scale col mb-4">
+                <div class="card h-100">
+                    <img src="./img/informativos/rosqueadeira.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rosqueadeira Elétrica</h5>
+                        <p class="card-text">Rosqueadeira elétrica, com eficiência e precisão para roscas perfeitas em
+                            menos tempo.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#rosqueadeiraModal">Saiba
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="animation_scale col mb-4">
+                <div class="card h-100">
+                    <img src="./img/informativos/conceitos.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Usinagem - Conceitos, Aplicações e Ferramentas</h5>
+                        <p class="card-text">Conheça a Usinagem e seus conceitos!</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#conceitosModal">Saiba
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vídeo -->
+    <h4 class="text-center">Sabia que Leonardo Da Vinci tem relação com a Usinagem?</h4>
+
+    <div class="ratio ratio-16x9 container w-100 w-md-75 mx-auto my-4">
+        <iframe src="https://www.youtube.com/embed/VEWuwAr-7oU?si=qlQkP-1m_iOvVMpM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Círculos de treinamentos -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="./img/empresas/suprir.png" alt="Imagem Circular" width="140" height="140" class="animation_scale rounded-circle" style="border: solid 1px rgb(232, 89, 0);">
+
+                <h2 style="color: rgb(232, 89, 0);">Suprir Ferramentas</h2>
+                <p>Equipando sua empresa com as melhores soluções em usinagem e manutenção.</p>
+                <p><a class="btn" href="https://www.instagram.com/suprirferramentas/" style="background-color: orange;">Acompanhe &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="./img/empresas/piveta.png" alt="Imagem Circular" width="140" height="140" class="animation_scale rounded-circle" style="border: solid 1px rgb(0, 128, 232);">
+
+                <h2 style="color: rgb(0, 128, 232);">Piveta Ferramentas</h2>
+                <p>Nossa missão é entregar ferramentas de transformação, tanto de produtos quanto de pessoas, juntos podemos alcançar resultados extraordinários.</p>
+                <p><a class="btn btn-primary" href="https://www.instagram.com/pivetaferramentas/">Acompanhe &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="./img/empresas/jg tools.png" alt="Imagem Circular" width="140" height="140" class="animation_scale rounded-circle" style="border: solid 1px rgb(232, 213, 0);">
+
+                <h2 style="color: rgb(232, 213, 0);">JG Tools</h2>
+                <p>And lastly this, the third column of representative placeholder content.</p>
+                <p><a class="btn" href="https://www.instagram.com/jgtoolsferramentas/" style="background-color: rgb(232, 213, 0);">Acompanhe &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blogs de treinamentos -->
+    <main class="container">
+
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark"
+            style="background-image: url('./img/complementar/game.png'); background-size: cover; background-position: center;">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Teste seus conhecimentos de uma maneira única!</h1>
+                <p class="lead my-3">Nada melhor do que aprender se divertindo não acha? Abaixo disponibilizamos um link
+                    que te direciona ao <strong>JOGO</strong>, não deixe de aprender de uma forma completamente
+                    diferente!</p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold">Descubre jogando agora</a></p>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="animation_scale_05 col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Modelo de Atendimento</h3>
+                        <div class="mb-1 text-muted">Novos colaboradores</div>
+                        <p class="card-text mb-auto">Disponibilizamos este modelo de atendimento para te ajudar a ter um
+                            atendimento preciso e eficaz!</p>
+                        <a href="./Docs/Script Vendas.doc" class="stretched-link">Download</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./img/complementar/atendimento.png" width="200" height="250" alt="Imagem de exemplo"
+                            class="bd-placeholder-img" />
+                    </div>
+                </div>
+            </div>
+            <div class="animation_scale_05 col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Excel</strong>
+                        <h3 class="mb-0">Planilha de Controle</h3>
+                        <div class="mb-1 text-muted">Todos os colaboradores</div>
+                        <p class="mb-auto">Essa planilha tem como objetivo ajudar a organização no seu dia a dia de
+                            trabalho!</p>
+                        <a href="#" class="stretched-link">Download</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./img/complementar/checklist.png" width="200" height="250" alt="Imagem de exemplo"
+                            class="bd-placeholder-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Dicas de treinamentos -->
+    <h4 class="text-center">Aqui vão algumas dicas rápidas que vão te ajudar nesta jornada de Usinagem!</h4>
+
+    <div class="container px-4 py-5" id="icon-grid">
+        <div class="fas_icons_color row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-book-open text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">História Milenar</h4>
+                    <p>A usinagem é um dos processos mais antigos de fabricação, datando de mais de 2.000 anos.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-ruler-combined text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">Precisão Extrema</h4>
+                    <p>A precisão da usinagem moderna pode chegar a tolerâncias de até 0,001 mm.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-laptop text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">Revolução do CNC</h4>
+                    <p>A usinagem CNC (Controle Numérico Computadorizado) revolucionou a indústria, permitindo cortes
+                        automatizados e complexos.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-sliders-h flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">Versatilidade de Materiais</h4>
+                    <p>O processo de usinagem pode ser aplicado em uma ampla variedade de materiais, incluindo metais,
+                        plásticos e madeiras.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-wrench text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">Indústrias de Aplicação</h4>
+                    <p>Ferramentas de usinagem como fresadoras e tornos são usadas em indústrias desde automotiva até
+                        aeroespacial.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-spray-can text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">Importância da Lubrificação</h4>
+                    <p>A lubrificação adequada nas operações de usinagem reduz o desgaste das ferramentas e melhora a
+                        qualidade do corte.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-angle-double-up text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">Predomínio do Aço</h4>
+                    <p>O aço é o material mais usinado no mundo devido à sua durabilidade e ampla aplicação.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fas fa-cog text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+                <div>
+                    <h4 class="fw-bold mb-0">Criação de Formas Complexas</h4>
+                    <p>A usinagem permite a fabricação de peças com formas complexas que seriam impossíveis com outros
+                        métodos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Perguntas frequentes -->
+    <div class="container">
+        <h4 class="text-left">Perguntas frequentes sobre Usinagem</h4>
+    </div>
+
+    <div class="container my-4">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        O que é usinagem e como ela funciona?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Usinagem é o processo de remoção de material de uma peça bruta para obter uma forma ou dimensão
+                        desejada, utilizando ferramentas de corte, como fresas e brocas. O material é removido em forma
+                        de cavacos, e o processo pode ser realizado manualmente ou de forma automatizada, dependendo do
+                        tipo de máquina e tecnologia utilizada.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Quais são os principais tipos de máquinas usadas na usinagem?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Os principais tipos de máquinas usadas na usinagem incluem tornos, fresadoras, furadeiras,
+                        retíficas e centros de usinagem CNC. Cada uma delas é projetada para realizar operações
+                        específicas, como cortes lineares, rotação, perfuração ou acabamentos de superfícies.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Qual a diferença entre usinagem CNC e usinagem convencional?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A usinagem CNC (Controle Numérico Computadorizado) utiliza programação e controle
+                        computadorizado para automatizar as operações, garantindo alta precisão e repetibilidade. Já a
+                        usinagem convencional é feita manualmente ou com controle menos automatizado, o que pode
+                        resultar em maior variação nas tolerâncias e na qualidade das peças.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Quais materiais podem ser usinados?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Uma ampla variedade de materiais pode ser usinada, incluindo metais como aço, alumínio, cobre e
+                        titânio; plásticos como acrílico e nylon; e até mesmo materiais compostos. A escolha da
+                        ferramenta e dos parâmetros de usinagem depende das propriedades do material a ser trabalhado.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Como a lubrificação afeta o processo de usinagem?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A lubrificação é crucial no processo de usinagem, pois reduz o atrito entre a ferramenta de
+                        corte e a peça de trabalho, diminuindo o desgaste da ferramenta e melhorando a qualidade do
+                        acabamento. Além disso, ajuda a resfriar as áreas de corte, prolongando a vida útil das
+                        ferramentas e prevenindo deformações causadas pelo calor.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Informativos -->
+    <!-- Acelerador -->
+    <div class="modal fade" id="aceleradorModal" tabindex="-1" aria-labelledby="aceleradorModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aceleradorModalLabel">Acelera Vendedores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Acelera Vendedores é um programa focado em transformar o potencial dos vendedores em resultados
+                    concretos. Com estratégias práticas e técnicas avançadas, capacitamos profissionais a otimizar suas
+                    habilidades de venda, melhorar o relacionamento com os clientes e superar metas. Nosso objetivo é
+                    acelerar o crescimento dos negócios, fornecendo ferramentas e táticas que aumentam as conversões e a
+                    fidelização de clientes. Com o Acelera Vendedores, você está a um passo de desbloquear seu
+                    verdadeiro potencial e alcançar novos patamares de sucesso no mercado.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Acelerador Vendedores - Piveta Ferramentas.pdf" download="Acelerador_Vendedores.pdf" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Digimess -->
+    <div class="modal fade" id="digimessModal" tabindex="-1" aria-labelledby="digimessModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="digimessModalLabel">Produtos Digimess</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A Digimess é uma marca de destaque no setor de instrumentos de medição e precisão, oferecendo uma
+                    ampla gama de produtos como paquímetros, micrômetros, relógios comparadores e outros equipamentos
+                    essenciais para indústrias e profissionais técnicos. Reconhecida pela qualidade, precisão e
+                    durabilidade de seus instrumentos, a Digimess atende a diversos segmentos, como usinagem, engenharia
+                    e laboratórios de controle de qualidade. Com foco em inovação e confiabilidade, a marca proporciona
+                    soluções tecnológicas avançadas para garantir medições exatas em aplicações industriais.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Produtos Digimess.pdf" download="Produtos_Digimess.pdf" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Afiadora -->
+    <div class="modal fade" id="afiadoraModal" tabindex="-1" aria-labelledby="afiadoraModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="afiadoraModalLabel">Afiadora Universal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A afiadora universal é uma máquina versátil utilizada principalmente em oficinas e indústrias para
+                    afiar e recondicionar ferramentas de corte, como fresas, brocas e alargadores. Ela permite a afiação
+                    precisa de diferentes ângulos e perfis, sendo essencial para manter a qualidade e a vida útil das
+                    ferramentas. A afiadora universal oferece grande flexibilidade, podendo ser ajustada para diversas
+                    operações de afiação, o que a torna indispensável para quem busca precisão e eficiência na
+                    manutenção de ferramentas de corte em processos de usinagem.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Afiadora Universal.pdf" download="Afiadora_Universal.pdf" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divisor -->
+    <div class="modal fade" id="divisorModal" tabindex="-1" aria-labelledby="divisorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="divisorModalLabel">Divisor Universal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O divisor universal é um dispositivo utilizado em máquinas-ferramenta, como fresadoras, para
+                    realizar divisões angulares precisas de uma peça. Essencial na fabricação de engrenagens, rodas
+                    dentadas e outros componentes mecânicos, o divisor universal permite dividir uma peça em segmentos
+                    exatos, possibilitando cortes e furos em ângulos específicos. Sua versatilidade o torna
+                    indispensável para operações complexas de usinagem, pois possibilita ajustar e realizar diferentes
+                    tipos de divisões com alta precisão, sendo amplamente utilizado em indústrias que demandam precisão
+                    e controle em seus processos de fabricação.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Divisor Universal.pdf" download="Divisor_Universal.pdf" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rosqueadeira -->
+    <div class="modal fade" id="rosqueadeiraModal" tabindex="-1" aria-labelledby="rosqueadeiraModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rosqueadeiraModalLabel">Rosqueadeira Elétrica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A rosqueadeira elétrica é uma máquina projetada para criar roscas internas em tubos e peças de forma
+                    rápida e eficiente. Utilizada principalmente em indústrias e oficinas mecânicas, essa ferramenta
+                    automatiza o processo de roscagem, garantindo uniformidade e precisão, além de reduzir o esforço
+                    manual. Com diferentes cabeçotes intercambiáveis, a rosqueadeira elétrica se adapta a diversos
+                    tamanhos e tipos de materiais, como metais e PVC, tornando-se uma solução versátil para aumentar a
+                    produtividade e a qualidade do trabalho em operações de roscagem.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Rosqueadeira Eletrica.pdf" download="Rosqueadeira_Eletrica.pdf" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conceitos de Usinagem -->
+    <div class="modal fade" id="conceitosModal" tabindex="-1" aria-labelledby="conceitosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="conceitosModalLabel">Usinagem - Conceitos, Aplicações e Ferramentas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Usinagem - Conceitos, Aplicações e Ferramentas aborda o processo de usinagem, que envolve a remoção
+                    controlada de material de uma peça bruta para alcançar dimensões e formas desejadas. Utilizando
+                    ferramentas de corte como tornos, fresadoras e furadeiras, a usinagem é aplicada em diversos
+                    setores, como automotivo, aeroespacial e industrial. O processo pode ser manual ou automatizado
+                    (CNC) e é utilizado para fabricar peças com alta precisão e complexidade. Além disso, o conceito
+                    explora as diferentes ferramentas de corte, materiais que podem ser usinados e a importância da
+                    lubrificação e refrigeração para otimizar o desempenho e a durabilidade das ferramentas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Conceitos Usinagem.pdf" download="Conceitos_Usinagem.pdf" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificações -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fas fa-bell me-2"></i>
+                <strong class="me-auto">Notificação</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                O seu download foi iniciado!
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            </ul>
+            <p class="text-center text-muted">&copy; 2024 Company, Inc</p>
+        </footer>
+    </div>
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>

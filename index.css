@@ -1,0 +1,49 @@
+.carousel-inner {
+    border-radius: 25px;
+}
+
+#carouselExampleCaptions {
+    margin-inline: 50px !important;
+}
+
+.ratio iframe {
+    border-radius: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #0048b4bf;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.fas_icons_color i {
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.fas_icons_color i:hover {
+    color: #0d6efdbf !important;
+    font-size: 2.0em !important;
+}
+
+.animation_scale {
+    transition: transform 0.3s ease;
+}
+
+.animation_scale:hover {
+    transform: scale(1.1);
+}
+
+.animation_scale_05 {
+    transition: transform 0.3s ease;
+}
+
+
+.animation_scale_05:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1035px) {
+    .carousel{
+        display: none;
+    }
+}

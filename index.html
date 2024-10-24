@@ -77,7 +77,7 @@
     <h4 class="text-center my-4">Conheça alguns parceiros, produtos e conceitos de <strong>Usinagem!</strong></h4>
 
     <div class="container mb-5">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
             <div class="animation_scale col mb-4">
                 <div class="card h-100">
                     <img src="./img/informativos/acelerador.png" class="card-img-top" alt="...">
@@ -145,6 +145,18 @@
                         <h5 class="card-title">Usinagem - Conceitos, Aplicações e Ferramentas</h5>
                         <p class="card-text">Conheça a Usinagem e seus conceitos!</p>
                         <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#conceitosModal">Saiba
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="animation_scale col mb-4">
+                <div class="card h-100">
+                    <img src="./img/informativos/vantagens.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vantagens e Benefícios de Ferramentas de Usinagem</h5>
+                        <p class="card-text">Saiba quais as vantagens e benefícios das ferramentas de
+                            usinagem.</p>
+                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vantagensModal">Saiba
                             mais</a>
                     </div>
                 </div>
@@ -223,7 +235,7 @@
                         <div class="mb-1 text-muted">Novos colaboradores</div>
                         <p class="card-text mb-auto">Disponibilizamos este modelo de atendimento para te ajudar a ter um
                             atendimento preciso e eficaz!</p>
-                        <a href="./Docs/Script Vendas.pdf" class="stretched-link">Download</a>
+                        <a href="./Docs/Script Vendas.pdf" target="_blank" class="stretched-link">Download</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img src="./img/complementar/atendimento.png" width="200" height="250" alt="Imagem de exemplo"
@@ -572,6 +584,37 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                     <a href="./Docs/Conceitos Usinagem.pdf" download="Conceitos_Usinagem.pdf" target="_blank"
+                        rel="noopener noreferrer" type="button"
+                        class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vantagens e Beneficios -->
+    <div class="modal fade" id="vantagensModal" tabindex="-1" aria-labelledby="vantagensModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vantagensModalLabel">Vantagens e Benefícios de Ferramentas de Usinagem
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Usinagem - Vantagens e Benefícios explora os principais pontos positivos deste processo de
+                    fabricação, que envolve a remoção controlada de material para criar peças com precisão. A usinagem
+                    oferece alta qualidade dimensional e acabamento superficial superior, permitindo a fabricação de
+                    componentes complexos com tolerâncias rigorosas. Aplicada em setores como automotivo, aeroespacial e
+                    manufatura, ela se destaca por proporcionar flexibilidade na produção de peças únicas ou em
+                    série.<br><br>
+                    O processo, que pode ser manual ou automatizado (CNC), também garante eficiência produtiva e redução
+                    de desperdícios. Além disso, a usinagem permite o uso de uma ampla gama de materiais, desde metais
+                    até plásticos, e promove a economia ao maximizar a durabilidade das ferramentas por meio de técnicas
+                    adequadas de lubrificação e refrigeração.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Vantagens e Beneficios.pdf" download="Vantagens_e_Beneficios.pdf" target="_blank"
                         rel="noopener noreferrer" type="button"
                         class="btn btn-primary liveToastBtn download-btn">Download</a>
                 </div>

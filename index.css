@@ -42,8 +42,25 @@
     transform: scale(1.05);
 }
 
+#infiniteCarousel .carousel-control-prev,
+#infiniteCarousel .carousel-control-next {
+    width: auto; /* Ajusta a largura do botão para permitir posicionamento */
+    filter: invert(0%) brightness(0);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#infiniteCarousel .carousel-control-prev {
+    left: -4rem; /* Ajusta a seta para fora à esquerda */
+}
+
+#infiniteCarousel .carousel-control-next {
+    right: -4rem; /* Ajusta a seta para fora à direita */
+}
+
 @media screen and (max-width: 1035px) {
-    .carousel{
+    .carousel {
         display: none;
     }
 }

@@ -40,7 +40,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide mt-4 mx-auto" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel carousel-banner slide mt-4 mx-auto" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -48,17 +48,22 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/carrosel/cross-sell.png" class="d-block w-100" alt="Slide 1"
+                <img src="./img/carrosel/pastilhas.png" class="d-block w-100" alt="Slide 1" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carrosel/cross-sell.png" class="d-block w-100" alt="Slide 2"
                     style="object-fit: cover;">
             </div>
             <div class="carousel-item">
-                <img src="./img/carrosel/treinamento.png" class="d-block w-100" alt="Slide 2" style="object-fit: cover;">
+                <img src="./img/carrosel/treinamento.png" class="d-block w-100" alt="Slide 3" style="object-fit: cover;">
             </div>
             <div class="carousel-item">
-                <img src="./img/carrosel/jogos.png" class="d-block w-100" alt="Slide 3" style="object-fit: cover;">
+                <img src="./img/carrosel/jogos.png" class="d-block w-100" alt="Slide 4" style="object-fit: cover;">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -68,110 +73,172 @@
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon carousel-banner-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Próximo</span>
         </button>
     </div>
 
     <!-- Cards de treinamentos -->
     <h4 class="text-center my-4">Conheça alguns parceiros, produtos e conceitos de <strong>Usinagem!</strong></h4>
-    <div class="container mb-5">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/acelerador.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Acelera Vendedores</h5>
-                        <p class="card-text">O Acelera Vendedores é um programa que capacita nossos vendedores e acelera
-                            os nossos processos.</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aceleradorModal">Saiba
-                            mais</a>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner carousel-informativo">
+            <!-- Primeiro conjunto de 8 cards -->
+            <div class="carousel-item active">
+                <div class="container mb-5">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                        <!-- Adicione cards abaixo -->
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/acelerador.png" class="card-img-top"
+                                    alt="Acelera Vendedores">
+                                <div class="card-body">
+                                    <h5 class="card-title">Acelera Vendedores</h5>
+                                    <p class="card-text">O Acelera Vendedores é um programa que capacita nossos
+                                        vendedores e acelera os nossos processos.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#aceleradorModal">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/digimess.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produtos Digimess</h5>
+                                    <p class="card-text">Digimess, precisão e qualidade em instrumentos de medição para
+                                        quem
+                                        busca resultados confiáveis.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#digimessModal">Saiba
+                                        mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/afiadora.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Afiadora Universal</h5>
+                                    <p class="card-text">Afiadora universal, com versatilidade e precisão para manter
+                                        suas
+                                        ferramentas afiadas e produtivas.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#afiadoraModal">Saiba
+                                        mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/divisor.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Divisor Universal</h5>
+                                    <p class="card-text">Divisor Universal, com precisão e versatilidade para divisões
+                                        exatas em usinagem complexa.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#divisorModal">Saiba
+                                        mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/rosqueadeira.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosqueadeira Elétrica</h5>
+                                    <p class="card-text">Rosqueadeira elétrica, com eficiência e precisão para roscas
+                                        perfeitas em menos tempo.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#rosqueadeiraModal">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/conceitos.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Usinagem - Conceitos, Aplicações e Ferramentas</h5>
+                                    <p class="card-text">Conheça a Usinagem e seus conceitos!</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#conceitosModal">Saiba
+                                        mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/vantagens.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vantagens e Benefícios de Ferramentas de Usinagem</h5>
+                                    <p class="card-text">Saiba quais as vantagens da usinagem.
+                                    </p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#vantagensModal">Saiba
+                                        mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/taticas.png" class="card-img-top" alt="Cross Sell">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cross Sell</h5>
+                                    <p class="card-text">Descubra agora as estratégias de vendas mais eficazes para
+                                        impulsionar seus resultados.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#CrossSellModal">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicione cards acima -->
                     </div>
                 </div>
             </div>
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/digimess.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Produtos Digimess</h5>
-                        <p class="card-text">Digimess, precisão e qualidade em instrumentos de medição para quem busca
-                            resultados confiáveis.</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#digimessModal">Saiba
-                            mais</a>
+
+            <!-- Segundo conjunto de 8 cards -->
+            <div class="carousel-item">
+                <div class="container mb-5">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                        <!-- Adicione cards abaixo -->
+                        <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/pastilhas.png" class="card-img-top"
+                                    alt="Inserto de Pastilhas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pastilhas e Insertos</h5>
+                                    <p class="card-text">Conheça agora um material exencial para os detalhes perfeitos
+                                        da usinagem.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#PastilhasModal">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="animation_scale col mb-4">
+                            <div class="card h-100">
+                                <img src="./img/informativos/loading.png" class="card-img-top" alt="Inserto de Pastilhas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Em andamento...</h5>
+                                    <p class="card-text">Não deixe de estudar todos os treinamentos antes de lançarmos os próximos! :)</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PastilhasModal">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- Adicione cards acima -->
                     </div>
                 </div>
             </div>
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/afiadora.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Afiadora Universal</h5>
-                        <p class="card-text">Afiadora universal, com versatilidade e precisão para manter suas
-                            ferramentas afiadas e produtivas.</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#afiadoraModal">Saiba
-                            mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/divisor.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Divisor Universal</h5>
-                        <p class="card-text">Divisor Universal, com precisão e versatilidade para divisões exatas em
-                            usinagem complexa.</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#divisorModal">Saiba
-                            mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/rosqueadeira.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Rosqueadeira Elétrica</h5>
-                        <p class="card-text">Rosqueadeira elétrica, com eficiência e precisão para roscas perfeitas em
-                            menos tempo.</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rosqueadeiraModal">Saiba
-                            mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/conceitos.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Usinagem - Conceitos, Aplicações e Ferramentas</h5>
-                        <p class="card-text">Conheça a Usinagem e seus conceitos!</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#conceitosModal">Saiba
-                            mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/vantagens.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Vantagens e Benefícios de Ferramentas de Usinagem</h5>
-                        <p class="card-text">Saiba quais as vantagens e benefícios das ferramentas de
-                            usinagem.</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vantagensModal">Saiba
-                            mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="animation_scale col mb-4">
-                <div class="card h-100">
-                    <img src="./img/informativos/taticas.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cross Sell</h5>
-                        <p class="card-text">Descubra agora as estratégias de vendas mais eficazes para impulsionar seus
-                            resultados.</p>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CrossSellModal">Saiba
-                            mais</a>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="carousel-controls-bottom text-center container-control">
+            <button class="carousel-control-prev custom-carousel-control next-style" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="prev">
+                <i class="fas fa-arrow-left"></i>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next custom-carousel-control prev-style" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="next">
+                <i class="fas fa-arrow-right"></i>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
     </div>
 
@@ -644,13 +711,50 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Neste treinamento de Cross Sell, exploramos estratégias eficazes para impulsionar as vendas através de ofertas complementares e sugestões de produtos específicos para diferentes segmentos e necessidades de clientes. Através de uma abordagem prática, abordamos como identificar oportunidades de Cross Sell para produtos específicos, oferecendo soluções que ampliam o valor agregado para o cliente. 
+                    Neste treinamento de Cross Sell, exploramos estratégias eficazes para impulsionar as vendas através
+                    de ofertas complementares e sugestões de produtos específicos para diferentes segmentos e
+                    necessidades de clientes. Através de uma abordagem prática, abordamos como identificar oportunidades
+                    de Cross Sell para produtos específicos, oferecendo soluções que ampliam o valor agregado para o
+                    cliente.
                     <br><br>
-                    Além disso, detalhamos sugestões de ferramentas de usinagem personalizadas para setores específicos, destacando como essas adições podem atender a demandas particulares e otimizar os processos produtivos. Este treinamento é ideal para equipes de vendas que buscam aprimorar seu conhecimento em técnicas de Cross Sell, oferecendo uma experiência mais completa e estratégica para os clientes.
+                    Além disso, detalhamos sugestões de ferramentas de usinagem personalizadas para setores específicos,
+                    destacando como essas adições podem atender a demandas particulares e otimizar os processos
+                    produtivos. Este treinamento é ideal para equipes de vendas que buscam aprimorar seu conhecimento em
+                    técnicas de Cross Sell, oferecendo uma experiência mais completa e estratégica para os clientes.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <a href="./Docs/Cross Sell.pdf" download="Cross_Sell.pdf" target="_blank"
+                    <a href="./Docs/Cross Sell.pdf" download="Cross_Sell.pdf" target="_blank" rel="noopener noreferrer"
+                        type="button" class="btn btn-primary liveToastBtn download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pastilhas e Insertos -->
+    <div class="modal fade" id="PastilhasModal" tabindex="-1" aria-labelledby="PastilhasModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="PastilhasModalLabel">Pastilhas e Insertos
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Inserto de pastilhas são componentes intercambiáveis de corte, amplamente usados em processos de
+                    usinagem, como torneamento e fresamento, para garantir precisão e eficiência na remoção de material.
+                    Fabricadas em materiais resistentes como carboneto de tungstênio, cerâmica e CBN, essas pastilhas
+                    suportam altas velocidades e temperaturas, otimizando o corte em diferentes condições. Suas
+                    geometrias e revestimentos variados são projetados para aplicações específicas, como acabamento e
+                    desbaste, possibilitando um corte preciso em diversos materiais. <br><br>
+                    A principal vantagem das pastilhas é sua praticidade e economia, já que são facilmente substituídas
+                    sem a necessidade de afiação, mantendo o suporte intacto e reduzindo o tempo de setup. Isso aumenta
+                    a produtividade, especialmente em operações industriais, onde a durabilidade e a troca rápida das
+                    pastilhas são essenciais para uma produção eficiente e de alta qualidade.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./Docs/Pastilhas.pdf" download="Pastilhas_Insertos.pdf" target="_blank"
                         rel="noopener noreferrer" type="button"
                         class="btn btn-primary liveToastBtn download-btn">Download</a>
                 </div>

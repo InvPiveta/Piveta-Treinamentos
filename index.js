@@ -22,3 +22,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Função para abrir/fechar a sidebar
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('show');
+}
+
+// Função para fechar a sidebar ao clicar fora dela
+document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const isClickInsideSidebar = sidebar.contains(event.target);
+    const isHamburgerIcon = event.target.classList.contains('navbar-toggler-icon');
+
+    if (!isClickInsideSidebar && !isHamburgerIcon && sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+    }
+});
+
+function toggleDropdown(id) {
+    const submenu = document.getElementById(id);
+    submenu.classList.toggle('open');
+}

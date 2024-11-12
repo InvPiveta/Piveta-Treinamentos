@@ -108,8 +108,12 @@ body {
     margin-right: 10px;
 }
 
-.sidebar-seta::after {
-    margin-left: 10.255em;
+.sidebar-seta {
+    margin-left: auto;
+}
+
+.dropdown-toggle::after {
+    margin-left: auto;
 }
 
 .submenu {

@@ -1,0 +1,270 @@
+body {
+    padding-top: 56px;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(52, 58, 64);
+    position: fixed;
+    left: -300px;
+    top: 0;
+    overflow-y: auto;
+    color: white;
+    transition: left 0.3s;
+    z-index: 9999;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9998;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(52, 58, 64);
+}
+
+.sidebar-header img {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+}
+
+.username {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: white;
+}
+
+.user-level {
+    font-size: 0.9em;
+    color: white;
+}
+
+.progress-container {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+}
+
+.sidebar-balance {
+    background-color: #0d6efd;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+    color: white;
+}
+
+.sidebar-menu {
+    background-color: rgb(52, 58, 64);
+    padding: 10px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.05em;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+    background-color: #4a536551;
+    border-radius: 25px;
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+.sidebar-seta {
+    margin-left: auto;
+}
+
+.dropdown-toggle::after {
+    margin-left: auto;
+}
+
+.submenu {
+    display: none;
+    padding-left: 30px;
+    font-size: 0.9em;
+}
+
+.submenu.open {
+    display: block;
+}
+
+.sidebar-menu .dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: none;
+}
+
+.navbar-toggler-icon {
+    cursor: pointer;
+    font-size: 1.0rem;
+    color: rgb(52, 58, 64);
+    padding: 10px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-brand {
+    margin-left: 25px;
+}
+
+.navbar {
+    padding-inline: 60px;
+}
+
+.pesquisa {
+    display: flex;
+}
+
+.container-titulo {
+    padding-left: 10%;
+}
+
+.bg-image {
+    background: url("../../img/cursos/usinagem.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-image > .col-md-6 {
+    position: relative;
+    z-index: 2;
+}
+
+.container-certificado-color {
+    background-color: #0d6efd;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.certificado-image {
+    box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+    max-width: 500px;
+    position: absolute;
+    top: -30px;
+    right: 70px;
+    border-radius: 8px;
+}
+
+.img-card {
+    transition: 0.3s ease;
+}
+
+.img-card:hover {
+    transform: scale(1.04);
+}
+
+@media screen and (max-width: 1400px) {
+    .certificado-image {
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+        max-width: 500px;
+        position: absolute;
+        top: -230px;
+        right: 250px;
+        border-radius: 8px;    
+    }
+
+    .container-certificado {
+        padding-top: 200px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .certificado-image {
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+        max-width: 500px;
+        position: absolute;
+        top: -230px;
+        right: 100px;
+        border-radius: 8px;    
+    }
+
+    .blog-sidebar {
+        padding-top: 50px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certificado-image {
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+        max-width: 300px;
+        position: absolute;
+        top: -150px;
+        right: 100px;
+        border-radius: 8px;    
+    }
+
+    .container-certificado {
+        padding-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .certificado-image {
+        display: none;
+    }
+
+    .container-certificado {
+        padding-top: 0px !important;
+    }
+}

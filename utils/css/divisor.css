@@ -215,15 +215,15 @@ body {
 }
 
 .accordion-button:focus {
-    background-color: #945b002a;
+    background-color: #9488002a;
     color: #000;
-    border-color: #e69026;
+    border-color: #ffd427;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #945b002a;
+    background-color: #9488002a;
     color: #000;
-    border-color: #e69026;
+    border-color: #ffd427;
 }
 
 .accordion-button::after {
@@ -231,7 +231,7 @@ body {
 }
 
 .accordion {
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(225, 146, 0, 0.5);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(225, 202, 0, 0.5);
 }
 
 @media screen and (max-width: 1400px) {

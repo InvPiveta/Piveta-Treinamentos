@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../utils/css/digimess.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../../utils/css/vendedor.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- Ícone de hambúrguer -->
+        <span class="navbar-toggler-icon" onclick="toggleSidebar()"></span>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="../../img/logo/logo.png" alt="Logo" style="width: 40px; height: auto;">
+        </a>
+
+        <!-- Conteúdo da Navbar -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Catálogos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Treinamentos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/templates/categorias/vendedor.html">Vendedores</a></li>
+                        <li><a class="dropdown-item" href="/">Pré-Vendedores</a></li>
+                        <li><a class="dropdown-item" href="/">Orçamentista</a></li>
+                        <li><a class="dropdown-item" href="/">Expedição</a></li>
+                        <li><a class="dropdown-item" href="/">Usinagem</a></li>
+                        <li><a class="dropdown-item" href="/">Todos os cursos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Jogos</a>
+                </li>
+            </ul>
+
+            <!-- Formulário de busca (opcional) -->
+            <!-- <form class="pesquisa form-inline my-2 my-lg-0 ms-auto">
+                <input class="form-control me-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+
+        </div>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        <div class="sidebar-header">
+            <img src="../../img/logo/logo-branca.png" alt="User Avatar">
+            <!-- FOTO E NICK -->
+            <!-- <div class="username">@Pivetencer</div>
+            <div class="user-level">Iniciante</div>
+            <div class="progress-container">
+                <div class="progress" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 43%;" aria-valuenow="43"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small>2163 / 5000</small>
+            </div> -->
+            <!-- FOTO E NICK -->
+        </div>
+        <!-- MOEDAS AQUI -->
+        <!-- <div class="sidebar-balance">
+            <i class="fas fa-shopping-cart"></i> 2163 Beetcoins
+        </div> -->
+        <!-- MOEDAS AQUI -->
+        <div class="sidebar-menu">
+            <a href="/"><i class="fa-solid fa-house"></i>Home</a>
+            <a class="dropdown-toggle" onclick="toggleDropdown('CursosDropdown')">
+                <i class="fas fa-book"></i> Cursos
+            </a>
+            <div id="CursosDropdown" class="submenu">
+                <a href="/templates/categorias/vendedor.html">Vendedores</a>
+                <a href="/">Pré-Vendedores</a>
+                <a href="/">Orçamentistas</a>
+                <a href="/">Expedição</a>
+                <a href="/">Usinagem</a>
+                <a href="/">Todos os Cursos</a>
+            </div>
+            <a href="/"><i class="fas fa-file-alt"></i>Wiki</a>
+            <a href="/"><i class="fa-solid fa-play"></i> Vídeos</a>
+            <a href="/"><i class="fa-solid fa-image"></i></i> Imagens</a>
+            <a href="/"><i class="fas fa-link"></i> Links</a>
+            <a href="/"><i class="fa-solid fa-gamepad"></i> Jogos</a>
+        </div>
+    </div>
+
+    <div class="position-relative overflow-hidden text-center bg-image">
+        <div class="content">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">Treinamento Vendedores</h1>
+                <p class="lead font-weight-normal">
+                    Aprenda agora com os melhores treinamentos como se tornar o melhor vendedor! Tenha acessoa a um conteúdo exclusivo e gratuito.
+                </p>
+                <a class="btn btn-outline-dark" href="/">Home</a>
+            </div>
+        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 animation_scale">
+                    <a class="text-decoration-none text-dark" href="/templates/cursos/acelera-vendedores.html">
+                        <div class="card h-100">
+                            <img src="../../img/informativos/acelerador.png" class="card-img-top"
+                                alt="Acelera Vendedores">
+                            <div class="card-body">
+                                <h5 class="card-title">Acelera Vendedores</h5>
+                                <p class="card-text">O Acelera Vendedores é um programa que capacita nossos
+                                    vendedores e acelera os nossos processos.</p>
+                                <a class="btn btn-primary mt-2" href="../../templates/cursos/acelera-vendedores.html">Saiba
+                                    mais</a>
+                                <a class="btn btn-eye mt-2" data-bs-toggle="modal" data-bs-target="#aceleradorModal"><i
+                                        class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animation_scale">
+                    <a class="text-decoration-none text-dark" href="/templates/cursos/vantagens.html">
+                        <div class="card h-100">
+                            <img src="../../img/informativos/vantagens.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vantagens e Benefícios de Ferramentas de Usinagem</h5>
+                                <p class="card-text">Saiba quais as vantagens da usinagem.
+                                </p>
+                                <a class="btn btn-primary mt-2" href="../../templates/cursos/vantagens.html">Saiba
+                                    mais</a>
+                                <a class="btn btn-eye mt-2" data-bs-toggle="modal" data-bs-target="#vantagensModal"><i
+                                        class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animation_scale">
+                    <a class="text-decoration-none text-dark" href="/templates/cursos/taticas.html">
+                        <div class="card h-100">
+                            <img src="../../img/informativos/taticas.png" class="card-img-top" alt="Cross Sell">
+                            <div class="card-body">
+                                <h5 class="card-title">Cross Sell</h5>
+                                <p class="card-text">Descubra agora as estratégias de vendas mais eficazes para
+                                    impulsionar seus resultados.</p>
+                                <a class="btn btn-primary mt-2" href="../../templates/cursos/taticas.html">Saiba
+                                    mais</a>
+                                <a class="btn btn-eye mt-2" data-bs-toggle="modal" data-bs-target="#CrossSellModal"><i
+                                        class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 animation_scale">
+
+                </div>
+                <div class="col-md-4 animation_scale">
+
+                </div>
+                <div class="col-md-4 animation_scale">
+
+                </div>
+
+                <div class="col-md-4 animation_scale">
+
+                </div>
+                <div class="col-md-4 animation_scale">
+
+                </div>
+                <div class="col-md-4 animation_scale">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer text-center mt-4">
+        <p class="text-center text-muted">&copy; 2024 <a href="https://www.pivetaferramentas.com.br/"
+                target="_blank">Piveta Ferramentas</a></p>
+    </footer>
+
+    <div class="modal fade" id="aceleradorModal" tabindex="-1" aria-labelledby="aceleradorModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aceleradorModalLabel">Acelera Vendedores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    O Acelera Vendedores é um programa focado em transformar o potencial dos vendedores em resultados
+                    concretos. Com estratégias práticas e técnicas avançadas, capacitamos profissionais a otimizar suas
+                    habilidades de venda, melhorar o relacionamento com os clientes e superar metas. <br><br> Nosso
+                    objetivo é
+                    acelerar o crescimento dos negócios, fornecendo ferramentas e táticas que aumentam as conversões e a
+                    fidelização de clientes. Com o Acelera Vendedores, você está a um passo de desbloquear seu
+                    verdadeiro potencial e alcançar novos patamares de sucesso no mercado.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="/templates/cursos/acelera-vendedores.html" type="button"
+                        class="btn btn-primary download-btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vantagensModal" tabindex="-1" aria-labelledby="vantagensModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vantagensModalLabel">Vantagens e Benefícios de Ferramentas de Usinagem
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Usinagem - Vantagens e Benefícios explora os principais pontos positivos deste processo de
+                    fabricação, que envolve a remoção controlada de material para criar peças com precisão. A usinagem
+                    oferece alta qualidade dimensional e acabamento superficial superior, permitindo a fabricação de
+                    componentes complexos com tolerâncias rigorosas. Aplicada em setores como automotivo, aeroespacial e
+                    manufatura, ela se destaca por proporcionar flexibilidade na produção de peças únicas ou em
+                    série.<br><br>
+                    O processo, que pode ser manual ou automatizado (CNC), também garante eficiência produtiva e redução
+                    de desperdícios. Além disso, a usinagem permite o uso de uma ampla gama de materiais, desde metais
+                    até plásticos, e promove a economia ao maximizar a durabilidade das ferramentas por meio de técnicas
+                    adequadas de lubrificação e refrigeração.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="/templates/cursos/vantagens.html" type="button"
+                        class="btn btn-primary download-btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="CrossSellModal" tabindex="-1" aria-labelledby="CrossSellModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CrossSellModalLabel">Cross Sell
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Neste treinamento de Cross Sell, exploramos estratégias eficazes para impulsionar as vendas através
+                    de ofertas complementares e sugestões de produtos específicos para diferentes segmentos e
+                    necessidades de clientes. Através de uma abordagem prática, abordamos como identificar oportunidades
+                    de Cross Sell para produtos específicos, oferecendo soluções que ampliam o valor agregado para o
+                    cliente.
+                    <br><br>
+                    Além disso, detalhamos sugestões de ferramentas de usinagem personalizadas para setores específicos,
+                    destacando como essas adições podem atender a demandas particulares e otimizar os processos
+                    produtivos. Este treinamento é ideal para equipes de vendas que buscam aprimorar seu conhecimento em
+                    técnicas de Cross Sell, oferecendo uma experiência mais completa e estratégica para os clientes.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="./templates/cursos/taticas.html"
+                        type="button" class="btn btn-primary download-btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script>
+</body>
+
+<script src="../../index.js"></script>
+
+</html>

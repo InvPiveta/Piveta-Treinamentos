@@ -66,6 +66,25 @@
     --bs-btn-border-color: #ffffff
 }
 
+.btn-eye {
+    color: gray;
+    border-color: gray;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-eye:hover {
+    color: #0d6efdbf;
+    border-color: #0d6efdbf;
+}
+
+.animation_scale {
+    transition: transform 0.3s ease;
+}
+
+.animation_scale:hover {
+    transform: scale(1.1);
+}
+
 @media (min-width: 768px) {
     .flex-md-equal>* {
         -ms-flex: 1;

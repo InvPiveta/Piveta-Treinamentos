@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usinagem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../utils/css/digimess.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../../utils/css/usinagem-geral.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- Ícone de hambúrguer -->
+        <span class="navbar-toggler-icon" onclick="toggleSidebar()"></span>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="../../img/logo/logo.png" alt="Logo" style="width: 40px; height: auto;">
+        </a>
+
+        <!-- Conteúdo da Navbar -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Catálogos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Treinamentos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/templates/categorias/vendedor.html">Vendedores</a></li>
+                        <li><a class="dropdown-item" href="/templates/categorias/pre-vendedor.html">Pré-Vendedores</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/">Orçamentista</a></li>
+                        <li><a class="dropdown-item" href="/">Expedição</a></li>
+                        <li><a class="dropdown-item" href="/">Usinagem</a></li>
+                        <li><a class="dropdown-item" href="/">Todos os cursos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Jogos</a>
+                </li>
+            </ul>
+
+            <!-- Formulário de busca (opcional) -->
+            <!-- <form class="pesquisa form-inline my-2 my-lg-0 ms-auto">
+                <input class="form-control me-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+
+        </div>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        <div class="sidebar-header">
+            <img src="../../img/logo/logo-branca.png" alt="User Avatar">
+            <!-- FOTO E NICK -->
+            <!-- <div class="username">@Pivetencer</div>
+            <div class="user-level">Iniciante</div>
+            <div class="progress-container">
+                <div class="progress" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 43%;" aria-valuenow="43"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small>2163 / 5000</small>
+            </div> -->
+            <!-- FOTO E NICK -->
+        </div>
+        <!-- MOEDAS AQUI -->
+        <!-- <div class="sidebar-balance">
+            <i class="fas fa-shopping-cart"></i> 2163 Beetcoins
+        </div> -->
+        <!-- MOEDAS AQUI -->
+        <div class="sidebar-menu">
+            <a href="/"><i class="fa-solid fa-house"></i>Home</a>
+            <a class="dropdown-toggle" onclick="toggleDropdown('CursosDropdown')">
+                <i class="fas fa-book"></i> Cursos
+            </a>
+            <div id="CursosDropdown" class="submenu">
+                <a href="/templates/categorias/vendedor.html">Vendedores</a>
+                <a href="/templates/categorias/pre-vendedor.html">Pré-Vendedores</a>
+                <a href="/">Orçamentistas</a>
+                <a href="/">Expedição</a>
+                <a href="/">Usinagem</a>
+                <a href="/">Todos os Cursos</a>
+            </div>
+            <a href="/"><i class="fas fa-file-alt"></i>Wiki</a>
+            <a href="/"><i class="fa-solid fa-play"></i> Vídeos</a>
+            <a href="/"><i class="fa-solid fa-image"></i></i> Imagens</a>
+            <a href="/"><i class="fas fa-link"></i> Links</a>
+            <a href="/"><i class="fa-solid fa-gamepad"></i> Jogos</a>
+        </div>
+    </div>
+
+    <div class="position-relative overflow-hidden text-center bg-image">
+        <div class="content">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">Treinamento de Usinagem</h1>
+                <p class="lead font-weight-normal">
+                    Descubra as origens e os fundamentos da usinagem, explore as técnicas e práticas essenciais para a produção de peças e componentes mecânicos!
+                </p>
+                <a class="btn btn-outline-dark" href="/">Home</a>
+            </div>
+        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 animation_scale">
+                    <a class="text-decoration-none text-dark" href="/templates/cursos/usinagem.html">
+                        <div class="card h-100">
+                            <img src="../../img/informativos/conceitos.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Usinagem - Conceitos, Aplicações e Ferramentas</h5>
+                                <p class="card-text">Conheça a Usinagem e seus conceitos!</p>
+                                <a class="btn btn-primary mt-2" href="./templates/cursos/usinagem.html">Saiba
+                                    mais</a>
+                                <a class="btn btn-eye mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#conceitosModal"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 animation_scale">
+
+                </div>
+                <div class="col-md-4 animation_scale">
+
+                </div>
+                <div class="col-md-4 animation_scale">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer text-center mt-4">
+        <p class="text-center text-muted">&copy; 2024 <a href="https://www.pivetaferramentas.com.br/"
+                target="_blank">Piveta Ferramentas</a></p>
+    </footer>
+
+    <div class="modal fade" id="conceitosModal" tabindex="-1" aria-labelledby="conceitosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="conceitosModalLabel">Usinagem - Conceitos, Aplicações e Ferramentas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Usinagem - Conceitos, Aplicações e Ferramentas aborda o processo de usinagem, que envolve a remoção
+                    controlada de material de uma peça bruta para alcançar dimensões e formas desejadas. Utilizando
+                    ferramentas de corte como tornos, fresadoras e furadeiras, a usinagem é aplicada em diversos
+                    setores, como automotivo, aeroespacial e industrial.<br><br> O processo pode ser manual ou
+                    automatizado
+                    (CNC) e é utilizado para fabricar peças com alta precisão e complexidade. Além disso, o conceito
+                    explora as diferentes ferramentas de corte, materiais que podem ser usinados e a importância da
+                    lubrificação e refrigeração para otimizar o desempenho e a durabilidade das ferramentas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="/templates/cursos/usinagem.html" type="button" class="btn btn-primary download-btn">Saiba
+                        mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script>
+</body>
+
+<script src="../../index.js"></script>
+
+</html>
